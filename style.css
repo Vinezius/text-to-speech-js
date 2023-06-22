@@ -1,0 +1,30 @@
+html{
+	background-color: #36008d;
+}
+
+.div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+
+.input{
+	padding: 12px 20px;
+	font-size: 1rem;
+	border-style: solid;
+	border-color: var(--accent);
+	text-align: center;
+	outline: transparent;
+	margin: 0.5%;
+}
+
+.botao{
+	padding: 12px 20px;
+	font-size: 1rem;
+	border-style: solid;
+	border-color: var(--accent);
+	text-align: center;
+	outline: transparent;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Text to speech</title>
+  </head>
+  <body>
+    <div class="div">
+      <input type="text" placeholder="Mensagem" id="texto" class="input" />
+      <button id="botao" onclick="falar()" class="botao">Falar</button>
+    </div>
+  </body>
+
+  <script>
+    function falar() {
+      let input = document.getElementById("texto");
+      let voz = new SpeechSynthesisUtterance(input.value);
+      voz.lang = "pt-BR";
+      voz.pitch = 1;
+      voz.volume = 1;
+      voz.rate = 1;
+      speechSynthesis.speak(voz);
+    }
+  </script>
+</html>
